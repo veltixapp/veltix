@@ -1,22 +1,19 @@
 {
   "name": "veltix",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A plug-and-play React SDK for visual editing",
   "main": "dist/veltix.umd.js",
   "module": "dist/veltix.es.js",
   "types": "dist/index.d.ts",
   "exports": {
+    "./veltix.css": "./dist/veltix.css",
     ".": {
       "import": "./dist/veltix.es.js",
       "require": "./dist/veltix.umd.js",
       "types": "./dist/index.d.ts"
     }
   },
-  "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c",
-    "prepublishOnly": "npm run build"
-  },
+  "scripts": {},
   "peerDependencies": {
     "react": "^19.1.0",
     "react-dom": "^18.0.0"
@@ -30,24 +27,8 @@
   ],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.27.7",
-    "@babel/preset-react": "^7.27.1",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^28.0.6",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^16.0.1",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^12.1.4",
-    "@types/react": "^19.1.8",
-    "rollup": "^4.44.1",
-    "rollup-plugin-dts": "^6.2.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "tslib": "^2.8.1"
-  },
+  "devDependencies": {},
+  "dependencies": {},
   "files": [
     "dist"
   ]
