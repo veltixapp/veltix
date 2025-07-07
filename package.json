@@ -1,6 +1,6 @@
 {
   "name": "veltix",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A plug-and-play React SDK for visual editing",
   "main": "dist/veltix.umd.js",
   "module": "dist/veltix.es.js",
