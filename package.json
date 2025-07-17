@@ -1,35 +1,20 @@
 {
   "name": "veltix",
-  "version": "0.0.5",
-  "description": "A plug-and-play React SDK for visual editing",
-  "main": "dist/veltix.umd.js",
-  "module": "dist/veltix.es.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    "./veltix.css": "./dist/veltix.css",
-    ".": {
-      "import": "./dist/veltix.es.js",
-      "require": "./dist/veltix.umd.js",
-      "types": "./dist/index.d.ts"
-    }
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
   },
-  "scripts": {},
-  "peerDependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^18.0.0"
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "turbo": "^2.5.4",
+    "typescript": "5.8.2"
   },
-  "keywords": [
-    "visual-editor",
-    "sdk",
-    "react",
-    "builder",
-    "veltix"
-  ],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {},
-  "files": [
-    "dist"
-  ]
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20"
+  }
 }
